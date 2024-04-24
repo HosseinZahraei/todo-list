@@ -1,0 +1,128 @@
+@import url(./font.css);
+@import url(../fontawesome/css/all.css);
+@import url(./scrollbar.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Vazir;
+}
+
+.container{
+    padding: 1rem 2rem;
+    background-color: #474747;
+}
+main{
+    width: 100%;
+    min-height: calc(100vh  - 2rem);
+    padding: 1rem 2rem;
+    box-shadow: inset 0px 0px 5px white;
+    border-radius: 2px;
+}
+.topDiv{
+    width: 100%;
+    height: 100px;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
+input{
+    width: 100%;
+    height: 80%;
+    font-size: large;
+    border:0px;
+    border-radius: 5px 0px 0px 5px;
+    padding: 0.5rem;
+}
+
+input:focus{
+    background-color: gold;
+    outline: 0px;
+    cursor: text;
+    border-right: 1px solid rgb(0, 0, 0);
+
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 0px;
+    font-weight: bold;
+}
+#inputBtn{
+    background-color: gold;
+    border-radius: 0px 5px 5px 0px;
+    height: 80%;
+}
+.btn:hover{
+    cursor: pointer;
+
+}
+#listEraseBtn{
+    background-color: rgb(230, 87, 87);
+    color: rgb(0, 0, 0);
+}
+
+.bottomDiv{
+    width: 100%;
+    padding: 1rem 2rem;
+    border-top: 2px white solid;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottomDivTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
+}
+.todoList{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+li{
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0rem;
+}
+i{
+    padding: 0.3rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+}
+i:hover{
+    cursor: pointer;
+    background-color: #353535;
+    
+}
+.fa-circle-check{
+    color: greenyellow;
+}
+.fa-rotate-left{
+    color:gold;
+}
+.fa-trash-can{
+    color: tomato;
+
+}
+.checked{
+    text-decoration: line-through;
+    color: greenyellow;
+}
+.spanText{
+    overflow:auto;
+    max-width: 70%;
+    direction: rtl;
+}
